@@ -1,0 +1,1 @@
+<a ui-sref="app.inicio"> <!-- ESTO REQUIERE REDISEÑO --> <span class="fa fa-home"></span> </a> &raquo; <span ng-repeat="state in carola($state.current.name)" style="text-transform: capitalize"> <a ng-if="!$last" ui-sref="app.{{state}}"> {{state}} </a> <span ng-if="$last"> {{state}} </span> <span ng-if="!$last">&raquo;</span> </span>
